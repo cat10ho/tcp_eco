@@ -1,0 +1,25 @@
+{
+  "name": "tcp_eco",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/cat10ho/tcp_eco.git",
+  "author": "이이삭 <dlrltn1091@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node server.js",
+    "client": "node client.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "lodash": "^4.17.21",
+    "long": "^5.2.3",
+    "mysql2": "^3.9.7",
+    "protobufjs": "^6.11.2",
+    "uuid": "^8.3.2"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prettier": "^3.4.2"
+  }
+}
