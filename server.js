@@ -5,9 +5,9 @@ import handlers from './handlers/index.js';
 
 const PORT = 5555;
 
-const server = net.createServer((socket) => {
+const server = net.createServer((socket) => { //이건 서버를 만드는 것.
   console.log(`Client connected from: ${socket.remoteAddress}:${socket.remotePort}`);
- 
+   //socket.remoteAddress-> 어떤 주소로 연결되 있는지.
   socket.on('data' , (data) => {
     const buffer = Buffer.from(data);
 
@@ -57,7 +57,7 @@ const server = net.createServer((socket) => {
   });
 })
 
-server.listen(PORT, () => {
+server.listen(PORT, () => { //이게 서버 실행.
   console.log(`Echo server listening on port ${PORT}`);
-  console.log(server.address());
+  console.log(server.address()); //서버 어디서 뜨는지 확인용.
 })
